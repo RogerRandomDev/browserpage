@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Homepage</title>
+    <link rel="stylesheet" href="./index.css">
+  </head>
+  <script src="./app.js" type="text/javascript"></script>
+  <body>
+    <div id="homepage-icon-container">
+      <img src="crown.png" id="crown-icon">  
+      <h1 id="title">Master of the universe, leader of none</h1>
+        
+    </div>
+    
+    <div id="search-container">
+      <img src="./spite.jfif" style="float:left" width="48" height="48">
+      <form role="search" method="get" id="searchform" class="searchform" action="https://www.google.com/search?hl=en-GB&source=hp&q=">
+        <div id="gform">
+          <label class="screen-reader-text" for="s"></label>
+          <input type="text" value="" name="q" id="s">
+          <input type="submit" class="btn fa-input" value="Search" style="font-family: FontAwesome;">
+        </div>
+      </form>
+      <img src="./spite.jfif" style="float:right;transform:translateY(-100%);" width="48" height="48">
+    </div>
+    <div id="shortcuts-container">
+      <div>
+        <div>
+          <a id="github" onmousedown="linkTo('https\://github.com/rogerrandomdev','github')">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/github.svg" width="48" height="48" alt="GitHub logo"><br>
+            GitHub
+          </a>
+        </div>
+        <div>
+          <a id="portfolio" onmousedown="linkTo(`https://clinquant-centaur-2839e1.netlify.app/`,'portfolio')">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/github.svg" width="48" height="48" alt="GitHub logo"><br>
+            Portfolio
+          </a>
+        </div>
+        <div>
+          <a id="itch" onmousedown="linkTo('https\://itch.io/','itch')">
+            <img src="https://raw.githubusercontent.com/itchio/itchio.github.io/master/static/itchio-logo.svg" width="48" height="48" alt="itch.io logo"><br>
+            itch.io
+          </a>
+        </div>
+        <div>
+          <a id="youtube" onmousedown="linkTo('https\://www.youtube.com/','youtube')">
+            <img src="https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-youtube-square2-512.png" width="32" height="32" alt="YouTube logo"><br>
+            YouTube
+          </a>
+        </div>
+        
+      </div>
+    </div>
+  </body>
+</html>

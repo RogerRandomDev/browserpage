@@ -1,0 +1,113 @@
+/* Set the background color of the entire page */
+body {
+    background-color: #1f1f1f;
+    color:#fdfdfd;
+    overflow-x:hidden;
+    background-image: url("./back.jfif");
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+/* Style the homepage icon */
+#homepage-icon-container {
+    text-align: center;
+    font-size: 2em;
+    margin-top: 2%;
+}
+#title{
+    text-align:center;
+    transform-origin: center;
+    animation: title 3s cubic-bezier(1,1,1,1) 0s infinite alternate-reverse;
+}
+/* Style the search container */
+#search-container {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 1% 2%;
+    text-align: center;
+}
+
+/* Style the search input and button */
+#search-container input[type="text"], #search-container button[type="submit"] {
+    padding: 1%;
+    font-size: 1.2em;
+}
+
+/* Style the shortcuts container */
+#shortcuts-container {
+    margin: 0 auto;
+    
+    
+    text-align: center;
+    color:#fdfdfd;
+    
+}
+#shortcuts-container div {
+    display: flex;
+    flex-direction: row;
+    min-width: 100vw;
+    margin:0 auto;
+}
+/* Style the shortcuts list items */
+#shortcuts-container div div {
+    
+    color:#020202;
+    border-radius: 12.5%;
+    border-width: 1%;
+    min-height: 15vw;
+    min-width: 12.5vw;
+
+    border-style:solid;border-color: #afafaf;
+    background-color: #dfdfdf;
+}
+
+/* Style the homepage icon */
+#homepage-icon-container {
+    text-align: center;
+    font-size: 2em;
+    margin-top: 2%;
+    position: relative;
+}
+
+/* Style the crown icon */
+#crown-icon {
+    margin:0 auto;
+    margin-bottom:-6.25%;
+    max-width: 25vw;
+    animation: crown 2s cubic-bezier(1, 1, 1, 1) 0s infinite alternate;
+}
+/* Add a transition effect to the shortcuts */
+#shortcuts-container img{
+    min-width: 95%;
+    min-height: 75%;
+}
+#shortcuts-container a {
+    color:#020202;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    min-width: 100%;
+}
+
+/* Add a hover effect to the shortcuts */
+#shortcuts-container div div:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: white 0rem 0.5rem 0.125rem;
+}
+@keyframes crown {
+ from{
+    transform: rotateZ(-30deg);
+ }  
+ to{
+    transform: rotateZ(30deg);
+ } 
+}
+@keyframes title { 
+    from{
+        transform:rotateZ(-7.5deg) translateY(-7.5%);
+    }
+    to{
+        transform: rotateZ(7.5deg) translateY(7.5%);
+    }
+}
